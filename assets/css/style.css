@@ -1,0 +1,118 @@
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+min-height:100vh;
+background-image: url("/assets/image/pic.webp");
+background-size: cover;
+margin: 0;
+overflow: hidden;
+}
+
+body h1{
+    border: 1px solid black;
+    border-radius: 5px;
+    background: burlywood;
+    box-shadow:  5px 15px 5px lightslategray;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Shadows Into Light', cursive;
+    margin-bottom: 20px;}
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 5px;
+}
+
+.cell {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #333;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow:  5px 15px 5px lightslategray;
+    border-radius: 5px;
+    background: burlywood;
+    font-family:'Shadows Into Light', cursive; 
+
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+.comment{
+    margin-top: 20px;
+    border: 1px solid black ;
+    border-radius: 5px;
+    width: 250px;
+    height: 50px;
+    background: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  5px 15px 5px lightslategray;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+}
+#replay-btn{
+    margin-top: 20px;
+    background: burlywood;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow:  5px 15px 5px lightslategray;
+    transition: transform 0.4s ease-in-out;
+    display: none;
+}
+#replay-btn:hover{
+    background: lightcoral;
+    transform: translateY(-4px);
+}
+#startButton:hover{
+    background: lightgrey;
+    transform: translateY(-4px);
+}
+#startButton:hover{
+    background: lightgray;
+    transform: translateY(-4px);
+}
+#startButton{
+    margin-top: 20px;
+    background: burlywood;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow:  5px 15px 5px lightslategray;
+    transition: transform 0.4s ease-in-out;
+    font-family:'Shadows Into Light', cursive; 
+    font-size: 20px;
+}
+
+#game-board{
+    display: none;
+}
+#cpuButton{
+    margin-top: 20px;
+    background: burlywood;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow:  5px 15px 5px lightslategray;
+    transition: transform 0.4s ease-in-out;
+    font-family:'Shadows Into Light', cursive; 
+    font-size: 20px;
+}
+#cpuButton:hover{
+    background: lightgray;
+    transform: translateY(-4px);
+}
+.cell.winning-cell {
+    background-color: #7FFF00; 
+    color: #000; 
+    font-weight: bold;
+}
